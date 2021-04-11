@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flois\\source\\repos\\Macintosh_OOP\\Macintosh_OOP.csproj": {}
+    "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flois\\source\\repos\\Macintosh_OOP\\Macintosh_OOP.csproj": {
+    "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flois\\source\\repos\\Macintosh_OOP\\Macintosh_OOP.csproj",
+        "projectUniqueName": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
         "projectName": "Macintosh_OOP",
-        "projectPath": "C:\\Users\\flois\\source\\repos\\Macintosh_OOP\\Macintosh_OOP.csproj",
-        "packagesPath": "C:\\Users\\flois\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flois\\source\\repos\\Macintosh_OOP\\obj\\",
+        "projectPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
+        "packagesPath": "/Users/salmannhalabi/.nuget/packages/",
+        "outputPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\flois\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/salmannhalabi/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

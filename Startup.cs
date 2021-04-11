@@ -45,7 +45,6 @@ namespace Macintosh_OOP
             app.UseRouting();
 
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
