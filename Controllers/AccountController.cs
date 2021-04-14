@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Macintosh_OOP.Models;
 using System.Data;
-using System.Data.SqlClient;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using Macintosh_OOP.Models;
+using Services;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Macintosh_OOP.Controllers
 {
     public class AccountController : Controller
     {
-        SqlConnection con = new SqlConnection();
+        /*SqlConnection con = new SqlConnection();
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
         // GET: /<controller>/
@@ -45,6 +44,45 @@ namespace Macintosh_OOP.Controllers
                 con.Close();
                 return View("Error");
             }
+        }*/
+        private IUserService _userService;
+        private IMapper _mapper;
+        public IConfiguration Configuration;
+        private readonly Context _context;
+
+        [AllowAnonymous]
+        [HttpPost("authenticate")]
+        public IActionResult Authenticate(Account model)
+        {
+            var user = _userService.Authenticate(model.name, model.password);
+
+            if (user == null)
+                return BadRequest(new { message = "Username or password is incorrect" });
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(Configuration["Secret"]);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Id.ToString()),
+                    new Claim(ClaimTypes.Role, user.AccessLevel ?? "null")
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            // return basic user info and authentication token
+            return Ok(new
+            {
+                Id = user.Id,
+                Username = user.Username,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Token = tokenString
+            });
         }
     }
 }
