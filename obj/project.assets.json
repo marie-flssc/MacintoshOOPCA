@@ -2338,19 +2338,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/zoeharris/.nuget/packages/": {}
+    "/Users/salmannhalabi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj",
+      "projectUniqueName": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
       "projectName": "Macintosh_OOP",
-      "projectPath": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj",
-      "packagesPath": "/Users/zoeharris/.nuget/packages/",
-      "outputPath": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/obj/",
+      "projectPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
+      "packagesPath": "/Users/salmannhalabi/.nuget/packages/",
+      "outputPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/zoeharris/.config/NuGet/NuGet.Config"
+        "/Users/salmannhalabi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -2433,7 +2433,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }
