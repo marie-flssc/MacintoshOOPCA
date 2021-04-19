@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj": {}
+    "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj": {}
   },
   "projects": {
-    "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj": {
+    "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
+        "projectUniqueName": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj",
         "projectName": "Macintosh_OOP",
-        "projectPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/Macintosh_OOP.csproj",
-        "packagesPath": "/Users/salmannhalabi/.nuget/packages/",
-        "outputPath": "/Users/salmannhalabi/Desktop/MacintoshOOPCA/obj/",
+        "projectPath": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/Macintosh_OOP.csproj",
+        "packagesPath": "/Users/zoeharris/.nuget/packages/",
+        "outputPath": "/Users/zoeharris/School/S4/OOP/final_project/MacintoshOOPCA/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/salmannhalabi/.nuget/NuGet/NuGet.Config"
+          "/Users/zoeharris/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -40,11 +40,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.1.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.1.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -52,7 +56,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -72,7 +76,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[5.6.0, )"
+              "version": "[6.10.0, )"
             }
           },
           "imports": [
@@ -93,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

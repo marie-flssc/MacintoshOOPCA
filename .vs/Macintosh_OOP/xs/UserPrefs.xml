@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{19133FFF-D817-4AD7-8A2D-110F8FC83203}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Controllers/AccountController.cs" Line="147" Column="20" />
+      <File FileName="appsettings.json" Line="15" Column="1" />
+      <File FileName="mono_crash.11a6748113.0.json" />
+      <File FileName="Data/Context.cs" />
+      <File FileName="Models/Account.cs" />
+      <File FileName="Services/AccountServices.cs" />
+      <File FileName="Models/AuthenticateModel.cs" />
+      <File FileName="Models/RegisterModel.cs" />
+      <File FileName="Helpers/AutoMapperProfile.cs" />
+      <File FileName="Models/UserModel.cs" />
+      <File FileName="Models/UpdateModel.cs" />
+      <File FileName="Controllers/CalendarController.cs" />
+      <File FileName="Views/Index.cshtml" />
+      <File FileName="Program.cs" Line="23" Column="43" />
+      <File FileName="Startup.cs" Line="39" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Macintosh_OOP" expanded="True">
+            <Node name="Macintosh_OOP" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Macintosh__OOP PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

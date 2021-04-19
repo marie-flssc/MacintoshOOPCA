@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Web.Mvc;
 using DayPilot.Web.Mvc;
 using DayPilot.Web.Mvc.Enums;
@@ -35,8 +35,8 @@ namespace TutorialMvc5ResourceCalendar.Controllers
                 DataTextField = "Text";
 
                 Events = from e in dc.Events where !((e.End <= VisibleStart) || (e.Start >= VisibleEnd)) select e;
-            */
+            
             }
         }
     }
-}
+}*/
